@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Settings component="StartMenu" version="4.3.1">
+	<MenuStyle value="Classic1"/>
+	<Computer value="Hide"/>
+	<Documents value="Hide"/>
+	<Search value="0"/>
+	<Help value="0"/>
+	<RecentPrograms value="None"/>
+	<StartScreenShortcut value="0"/>
+	<HighlightNew value="0"/>
+	<SearchBox value="Hide"/>
+	<InvertMetroIcons value="0"/>
+	<SkinC1 value="Metro"/>
+	<SkinVariationC1 value=""/>
+	<SkinOptionsC1>
+		<Line>CAPTION=0</Line>
+		<Line>USER_IMAGE=0</Line>
+		<Line>USER_NAME=0</Line>
+		<Line>CENTER_NAME=0</Line>
+		<Line>SMALL_ICONS=1</Line>
+		<Line>LARGE_FONT=0</Line>
+		<Line>ICON_FRAMES=1</Line>
+		<Line>OPAQUE=0</Line>
+	</SkinOptionsC1>
+	<CustomTaskbar value="1"/>
+	<TaskbarLook value="Opaque"/>
+	<SkipMetro value="1"/>
+</Settings>
