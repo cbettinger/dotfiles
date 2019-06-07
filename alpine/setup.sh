@@ -18,7 +18,7 @@ apk update
 apk upgrade
 
 # install basic tools
-apk add sudo mc zip unzip p7zip neofetch htop
+apk add sudo mc rsync zip unzip neofetch htop
 
 # install development tools
 apk add cloc git nodejs npm
