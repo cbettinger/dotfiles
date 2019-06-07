@@ -1,4 +1,6 @@
 #!/bin/sh
 mount -t drvfs x: /mnt/x
+mkdir -p /mnt/x/CORSAIR/C/iCloudDrive
 mkdir -p /mnt/x/CORSAIR/D
+rsync -r --size-only --delete --stats /mnt/c/Users/Christian/iCloudDrive /mnt/x/CORSAIR/C --exclude ".Trash"
 rsync -r --size-only --delete --stats /mnt/d/ /mnt/x/CORSAIR/D --exclude='$RECYCLE.BIN' --exclude="System Volume Information" --exclude 'node_modules'
