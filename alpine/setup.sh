@@ -10,6 +10,9 @@ install -m=+x users /usr/local/bin
 wget https://raw.githubusercontent.com/cbettinger/dotfiles/master/alpine/version
 install -m=+x version /usr/local/bin
 
+wget https://raw.githubusercontent.com/cbettinger/dotfiles/master/alpine/backup
+install -m=+x backup /usr/local/bin
+
 # remove MOTD
 cat /dev/null > /etc/motd
 
@@ -27,6 +30,9 @@ npm update -g npm
 # create user
 adduser -D cb
 addgroup cb wheel
+
+# create mount point for external HDD
+mkdir /mnt/x
 
 # cleanup
 rm -f users version

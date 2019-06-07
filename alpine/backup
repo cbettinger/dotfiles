@@ -1,0 +1,4 @@
+#!/bin/sh
+mount -t drvfs x: /mnt/x
+mkdir -p /mnt/x/CORSAIR/D
+rsync -a --delete --progress --stats /mnt/d/ /mnt/x/CORSAIR/D --exclude='$RECYCLE.BIN' --exclude="System Volume Information" --exclude 'node_modules'
