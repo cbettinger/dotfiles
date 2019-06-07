@@ -1,0 +1,2 @@
+#!/bin/sh
+echo $(grep "PRETTY_NAME" /etc/os-release | sed 's/^PRETTY_NAME="\(.*\)"/\1/') "("$(grep "VERSION_ID" /etc/os-release | sed 's/^VERSION_ID=\(.*\)/\1/')")"
