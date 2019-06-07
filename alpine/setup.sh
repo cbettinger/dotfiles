@@ -5,13 +5,13 @@
 
 # download and install shell scripts
 wget https://raw.githubusercontent.com/cbettinger/dotfiles/master/alpine/users
-install -m=+x users /usr/local/bin
+install -m=+rx users /usr/local/bin
 
 wget https://raw.githubusercontent.com/cbettinger/dotfiles/master/alpine/version
-install -m=+x version /usr/local/bin
+install -m=+rx version /usr/local/bin
 
 wget https://raw.githubusercontent.com/cbettinger/dotfiles/master/alpine/backup
-install -m=+x backup /usr/local/bin
+install -m=+rx backup /usr/local/bin
 
 # remove MOTD
 cat /dev/null > /etc/motd
