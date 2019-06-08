@@ -22,9 +22,6 @@ install -m=+rx weather /usr/local/bin
 cd ..
 rm -rf temp
 
-# cleanup
-rm -f users version backup weather
-
 # remove MOTD
 cat /dev/null > /etc/motd
 
