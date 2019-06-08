@@ -43,3 +43,7 @@ npm update -g npm
 adduser -D cb
 addgroup cb wheel
 
+# setup folder for global npm packges
+mkdir /home/cb/.npm-global
+echo 'prefix=~/.npm-global' >> /home/cb/.npmrc
+echo 'export PATH="~/.npm-global/bin:./node_modules/.bin:$PATH"' >> /home/cb/.profile
