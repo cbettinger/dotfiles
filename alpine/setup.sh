@@ -4,6 +4,9 @@
 # wget -O - -https://raw.githubusercontent.com/cbettinger/dotfiles/master/alpine/setup.sh | sh
 
 # download and install shell scripts
+mkdir temp
+cd temp
+
 wget https://raw.githubusercontent.com/cbettinger/dotfiles/master/alpine/users
 install -m=+rx users /usr/local/bin
 
@@ -12,6 +15,15 @@ install -m=+rx version /usr/local/bin
 
 wget https://raw.githubusercontent.com/cbettinger/dotfiles/master/alpine/backup
 install -m=+rx backup /usr/local/bin
+
+wget https://raw.githubusercontent.com/cbettinger/dotfiles/master/alpine/weather
+install -m=+rx weather /usr/local/bin
+
+cd ..
+rm -rf temp
+
+# cleanup
+rm -f users version backup weather
 
 # remove MOTD
 cat /dev/null > /etc/motd
@@ -33,6 +45,3 @@ addgroup cb wheel
 
 # create mount point for external HDD
 mkdir /mnt/x
-
-# cleanup
-rm -f users version

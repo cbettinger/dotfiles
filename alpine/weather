@@ -1,0 +1,3 @@
+#!/bin/sh
+clear
+wget -O - wttr.in/Trier
