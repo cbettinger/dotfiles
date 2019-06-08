@@ -25,6 +25,9 @@ rm -rf temp
 # remove MOTD
 cat /dev/null > /etc/motd
 
+# create mount point for external HDD
+mkdir /mnt/x
+
 # update and upgrade packages
 apk update
 apk upgrade
@@ -40,5 +43,3 @@ npm update -g npm
 adduser -D cb
 addgroup cb wheel
 
-# create mount point for external HDD
-mkdir /mnt/x
