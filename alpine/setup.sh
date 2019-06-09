@@ -39,11 +39,12 @@ apk add sudo mc rsync zip unzip neofetch htop
 apk add cloc git nodejs npm
 npm update -g npm
 
-# create user
-adduser -D cb
-addgroup cb wheel
-
 # setup folder for global npm packges
 mkdir /home/cb/.npm-global
 echo 'prefix=~/.npm-global' >> /home/cb/.npmrc
 echo 'export PATH="~/.npm-global/bin:./node_modules/.bin:$PATH"' >> /home/cb/.profile
+
+# create user
+adduser -D cb
+addgroup cb wheel
+passwd cb
