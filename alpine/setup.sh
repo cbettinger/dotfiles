@@ -33,7 +33,7 @@ apk update
 apk upgrade
 
 # install basic tools
-apk add sudo mc rsync zip unzip neofetch htop
+apk add sudo mc rsync zip unzip neofetch htop aria2
 
 # install development tools
 apk add cloc git nodejs npm
