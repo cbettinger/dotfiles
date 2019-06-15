@@ -36,6 +36,7 @@ apk upgrade
 apk add sudo mc rsync zip unzip neofetch htop aria2
 
 # install development tools
+apk add build-base cmake bison flex
 apk add cloc git nodejs npm
 npm update -g npm
 
