@@ -20,6 +20,7 @@
 	"git.enabled": false,
 	"git.ignoreMissingGitWarning": true,
 	"javascript.updateImportsOnFileMove.enabled": "always",
+	//"sonarlint.ls.javaHome": "C:\\Program Files\\Java\\jre1.8.0_172",
 	"sonarlint.ls.javaHome": "/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home",
 	"telemetry.enableTelemetry": false,
 	"terminal.integrated.fontFamily": "SF Mono, Fira Mono, Consolas",
