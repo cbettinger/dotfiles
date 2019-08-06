@@ -13,11 +13,8 @@ install -m=+rx users /usr/local/bin
 wget https://raw.githubusercontent.com/cbettinger/dotfiles/master/alpine/version
 install -m=+rx version /usr/local/bin
 
-wget https://raw.githubusercontent.com/cbettinger/dotfiles/master/alpine/backup
-install -m=+rx backup /usr/local/bin
-
-wget https://raw.githubusercontent.com/cbettinger/dotfiles/master/alpine/weather
-install -m=+rx weather /usr/local/bin
+wget https://raw.githubusercontent.com/cbettinger/dotfiles/master/alpine/wttr
+install -m=+rx wttr /usr/local/bin
 
 cd ..
 rm -rf temp
@@ -25,15 +22,12 @@ rm -rf temp
 # remove MOTD
 cat /dev/null > /etc/motd
 
-# create mount point for external HDD
-mkdir /mnt/x
-
 # update and upgrade packages
 apk update
 apk upgrade
 
 # install basic tools
-apk add sudo mc rsync openssh-client zip unzip neofetch htop aria2
+apk add sudo mc openssh-client zip unzip neofetch htop aria2
 
 # install development tools
 apk add build-base cmake bison flex
