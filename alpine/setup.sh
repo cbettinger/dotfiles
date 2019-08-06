@@ -7,14 +7,14 @@
 mkdir temp
 cd temp
 
-wget https://raw.githubusercontent.com/cbettinger/dotfiles/master/alpine/users
+wget https://raw.githubusercontent.com/cbettinger/dotfiles/master/ubuntu/users
 install -m=+rx users /usr/local/bin
+
+wget https://raw.githubusercontent.com/cbettinger/dotfiles/master/ubuntu/wttr
+install -m=+rx wttr /usr/local/bin
 
 wget https://raw.githubusercontent.com/cbettinger/dotfiles/master/alpine/version
 install -m=+rx version /usr/local/bin
-
-wget https://raw.githubusercontent.com/cbettinger/dotfiles/master/alpine/wttr
-install -m=+rx wttr /usr/local/bin
 
 cd ..
 rm -rf temp
