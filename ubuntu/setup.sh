@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # download and execute this script
-# curl -sL https://raw.githubusercontent.com/cbettinger/dotfiles/master/ubuntu/setup.sh | bash -
+# curl -sL https://raw.githubusercontent.com/cbettinger/dotfiles/master/ubuntu/setup.sh | sudo -E bash -
 
 # download and install shell scripts
 mkdir temp
