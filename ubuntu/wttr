@@ -1,0 +1,3 @@
+#!/bin/sh
+clear
+wget -q -T 10 -O - wttr.in/Trier?lang=de
