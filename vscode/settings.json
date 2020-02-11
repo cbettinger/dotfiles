@@ -2,6 +2,7 @@
 	"breadcrumbs.enabled": false,
 	"editor.cursorStyle": "line-thin",
 	"editor.detectIndentation": false,
+	"editor.foldingHighlight": false,
 	"editor.fontFamily": "SF Mono, Fira Mono, Consolas",
 	"editor.fontLigatures": true,
 	"editor.fontSize": 13,
