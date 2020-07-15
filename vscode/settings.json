@@ -1,5 +1,6 @@
 {
 	"[javascript]": { "editor.defaultFormatter": "dbaeumer.vscode-eslint" },
+	"[handlebars]": { "files.trimTrailingWhitespace": false },
 	"[markdown]": { "files.trimTrailingWhitespace": false },
 	"breadcrumbs.enabled": false,
 	"editor.codeActionsOnSave": { "source.fixAll": true },
