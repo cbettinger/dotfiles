@@ -3,6 +3,7 @@
 	<MenuStyle value="Classic1"/>
 	<Computer value="Hide"/>
 	<Documents value="Hide"/>
+	<LogOff value="0"/>
 	<Search value="0"/>
 	<Help value="0"/>
 	<RecentPrograms value="None"/>
