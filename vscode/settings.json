@@ -54,8 +54,6 @@
 	"workbench.tree.indent": 12,
 	"workbench.tree.renderIndentGuides": "none",
 	"java.cleanup.actionsOnSave": [
-		"qualifyMembers",
-		"qualifyStaticMembers",
 		"addOverride",
 		"addDeprecated",
 		"stringConcatToTextBlock",
