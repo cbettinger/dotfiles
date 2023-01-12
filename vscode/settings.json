@@ -1,6 +1,8 @@
 {
+	"[css]": { "editor.defaultFormatter": "vscode.css-language-features" },
 	"[handlebars]": { "files.trimTrailingWhitespace": false },
 	"[html]": { "editor.defaultFormatter": "vscode.html-language-features" },
+	"[java]": { "editor.defaultFormatter": "redhat.java" },
 	"[javascript]": { "editor.defaultFormatter": "dbaeumer.vscode-eslint" },
 	"[json]": { "editor.defaultFormatter": "vscode.json-language-features" },
 	"[markdown]": { "files.trimTrailingWhitespace": false },
@@ -29,9 +31,13 @@
 	"files.trimTrailingWhitespace": true,
 	"git.enabled": false,
 	"git.ignoreMissingGitWarning": true,
+	"html.format.wrapLineLength": 0,
 	"javascript.updateImportsOnFileMove.enabled": "always",
-	"sonarlint.ls.javaHome": "/Library/Java/JavaVirtualMachines/jdk-19.0.1.jdk/Contents/Home",
-	"sonarlint.ls.javaHome": "C:\\Program Files\\Java\\jdk-19",
+	"redhat.telemetry.enabled": false,
+	"security.workspace.trust.untrustedFiles": "open",
+	//"sonarlint.ls.javaHome": "/Library/Java/JavaVirtualMachines/jdk-19.0.1.jdk/Contents/Home",
+	"sonarlint.ls.javaHome": "C:\\Program Files\\Java\\jdk-19.0.1",
+	"terminal.integrated.cwd": "",
 	"terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
 	"terminal.integrated.enablePersistentSessions": false,
 	"terminal.integrated.fontFamily": "SF Mono, Consolas",
@@ -41,9 +47,32 @@
 	"terminal.integrated.lineHeight": 1.3,
 	"terminal.integrated.persistentSessionReviveProcess": "never",
 	"workbench.activityBar.visible": true,
+	"workbench.colorCustomizations": { "sideBar.background": "#202020" },
 	"workbench.panel.defaultLocation": "right",
 	"workbench.sideBar.location": "left",
 	"workbench.startupEditor": "none",
 	"workbench.tree.indent": 12,
-	"workbench.tree.renderIndentGuides": "none"
+	"workbench.tree.renderIndentGuides": "none",
+	"java.cleanup.actionsOnSave": [
+		"qualifyMembers",
+		"qualifyStaticMembers",
+		"addOverride",
+		"addDeprecated",
+		"stringConcatToTextBlock",
+		"invertEquals"
+	],
+	"sonarlint.rules": {
+		"java:S1948": {
+			"level": "off"
+		},
+		"java:S3776": {
+			"level": "off"
+		},
+		"java:S3358": {
+			"level": "off"
+		},
+		"javascript:S3776": {
+			"level": "off"
+		}
+	}
 }
